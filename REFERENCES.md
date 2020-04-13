@@ -38,3 +38,4 @@ A free text on the potential outcomes approach to causal inference
 
 9. A more technical overview [Causal Inference In statistics](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)
 
+10. Estimating lifetime value in [Customer-Based Corporate Valuation for Publicly Traded Non-Contractual Firms](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3040422&download=yes)
