@@ -1,10 +1,9 @@
 require.undef('tree');
 
 define('tree', ['d3'], (d3) => {
-    const draw = (container, data, width, height) => {
+    const draw = (container, data, positions, width, height) => {
         width = width || 600;
         height = height || 200;
-         console.log('tree called');
         const svg = d3.select(container)
                       .append('svg')
                       .attr('width', width)
@@ -18,16 +17,19 @@ define('tree', ['d3'], (d3) => {
          * Accompying blog post:
          * https://regularmemory.blog/post/draggable-network-graph-with-d3js/
          */
+        const RADIUS = 20;
+        const randomLoc = () => RADIUS + (width - 2*RADIUS) * Math.random();
 
         // Object to hold nodes and edges
         let graph = {"nodes": {}, "edges": []};
 
         // For each edge from graph.json
         // create an object with a source and target
-        data.forEach(edge => graph.edges.push({
-            "source": edge[0],
-            "target": edge[1]
-        }));
+        graph.edges = data.map( edge => { 
+            return {
+                source: edge[0],
+                target: edge[1]
+        }});
 
         // Create flat (1-dimensional) array from the list of edges
         let nodes = data.flat();
@@ -36,11 +38,13 @@ define('tree', ['d3'], (d3) => {
 
         // Create dictionary where each node will map to its properties
         for (node of nodes) {
+            // Assign random coordinates to each vertex if not given in
+            // positions object
+            const location = (positions && positions[node]) || [randomLoc(), randomLoc()];
             graph.nodes[node] = {
-                "label": node,
-                // Assign random coordinates to each vertex
-                "x": Math.random() * 500 + 100,
-                "y": Math.random() * 500 + 100
+                label: node,
+                x: location[0],
+                y: location[1]
             };
         }
 
