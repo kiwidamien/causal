@@ -45,3 +45,5 @@ A free text on the potential outcomes approach to causal inference
 12. [Better decision making with causal inference](https://multithreaded.stitchfix.com/blog/2019/12/19/good-marketing-decisions/); a Stitch Fix blog post around how to use causal inference in determining marketing spend. A big part of this question is how many people search "stitchfix" in google and click our Ad, instead of the (free to us) result listed below the ad? How does this change the way we think about our ad spend?
 
 13. A [paper](https://academic.oup.com/aje/article/164/11/1115/61454) on the Birthweight paradox, and a [summary](https://www.cdc.gov/mmwr/preview/mmwrhtml/00001782.htm) by the CDC
+
+14. An overview [post](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/) of conditioning on a collider (that one weird variable....). Isn't particularly deep, but contains references at varying degrees of difficulty.
