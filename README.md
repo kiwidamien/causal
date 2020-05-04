@@ -29,6 +29,26 @@ git reset --hard origin/master
 * [Stitch Fix blog post about causal reasoning in marketing](https://multithreaded.stitchfix.com/blog/2019/12/19/good-marketing-decisions/) which should give a business use case example.
 * If time, [the high level blog post](https://fabiandablander.com/r/Causal-Inference)
 
+## Meeting 3
+May 1st
+
+* Discussed problem of recitivism, and program treatment. Sketched DAG to identify effects. This is a project Joyce had been working on.
+* Discussed synthetic controls. Specifically looked at how the S&P 500 could be used as a synthetic control for Tesla's stock price [following Elon's tweet](https://www.alexpghayes.com/blog/elon-musk-send-tweet/)
+* There was some confusion about what makes a synthetic control vs diff in diff. Found an [article](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268) that gives the differences.
+* Talked about using lifelines for survival analysis/regression
+* Talked about how "a non-zero feature importance / coefficient" for observable correlations did not imply a causal effect (see ice-cream sales and violent crime correlation)
+
+
+References from this meeting:
+* [Synthetic control: Elon's tweet tanked Tesla's stock](https://www.alexpghayes.com/blog/elon-musk-send-tweet/)
+* [Boosting A/B Test Power with Panel Data models](https://kyleco.github.io/experiment-panel-data/) discusses different techniques to increase power by reducing variance by including within sample regressors. Did not cover in the meeting, but has a similar flavor to IPW. Might cover in meeting 4?
+* [Causal ingerence: difference in differences, causal impact, and synthetic controls](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268)
+
+
+## Meeting 4
+May 8
+
+* Tentative: back to chapter 3, specifically the backdoor path and front door path adjustment formulas, conditional intervention, probably skip inverse propensity (talked about in meeting 3), look into causal mediation. Maybe bring back the causal regressors from the Stitch Fix blog post (TMLE).
 ### Things discussed
 * Conditioning on colliders in [Berkson's paradox](https://en.wikipedia.org/wiki/Berkson%27s_paradox). The original example that spawned the "attractive/intelligent" example
 >Berkson's original illustration involves a retrospective study examining a risk factor for a disease in a statistical sample from a hospital in-patient population. Because samples are taken from a hospital in-patient population, rather than from the general public, this can result in a spurious negative association between the disease and the risk factor. For example, if the risk factor is diabetes and the disease is cholecystitis, a hospital patient without diabetes is more likely to have cholecystitis than a member of the general population, since the patient must have had some non-diabetes (possibly cholecystitis-causing) reason to enter the hospital in the first place. That result will be obtained regardless of whether there is any association between diabetes and cholecystitis in the general population.
