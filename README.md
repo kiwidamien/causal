@@ -73,6 +73,7 @@ A few interesting references came up from the problem session, particularly:
 May 15
 
 * Talk over questions arising from Chapter 3 problems from last time
+* Review [Lord's paradox](http://www.ccsenet.org/journal/index.php/ijsp/article/view/75051) analysis from meeting 4?
 * Cover chapter 4 (interventions)?
 * A really interesting paper that relates to inverse propensity weighting (when to stratify vs when to randomize). Link via [Twitter discussion](https://twitter.com/harshaw_tweets/status/1258088537225859074?s=19)
     * A source of DAG tweets for COVID: [thread1](https://twitter.com/EpiEllie/status/1258607363520675840) and [thread2](https://twitter.com/David_Simons_UK/status/1258543096461004801)
