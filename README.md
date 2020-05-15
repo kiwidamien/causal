@@ -62,7 +62,7 @@ A few interesting references came up from the problem session, particularly:
 
 * Around Lord's Paradox:
   * One [blog](https://m-clark.github.io/docs/lord/index.html) which agrees that Pearl's analysis should be that we condition on incoming weight of students, but does not provide much intuition about why this is the right thing to do.
-  * A much [deeper analysis](http://www.ccsenet.org/journal/index.php/ijsp/article/view/75051) of a similar paradox in an educational setting (comparing outcomes of different educational programs). This was a toy model with fake data, but was aimed at trying to build intuition around Lord's paradox. Might be worth looking in detail next time?
+  * A much [deeper analysis](http://www.ccsenet.org/journal/index.php/ijsp/article/view/75051) of a similar paradox in an educational setting (comparing outcomes of different educational programs). This was a toy model with fake data, but was aimed at trying to build intuition around Lord's paradox. Might be worth looking in detail next time? ([Different link](https://pdfs.semanticscholar.org/93f1/bb8dec0d0c3c84eb93fb0e7d1b328c11a8cb.pdf) to a PDF)
 * A [paper](https://www.stat.cmu.edu/~cshalizi/402/lectures/23-causal-estimation/lecture-23.pdf) on instrumental variables, starting around page 15. Pearl's description (page 85) is not really correct, he states things should be d-separated when they are not (they are connected by the very confounder you are trying to eliminate). The whole of section 3.8 I found to be pretty sloppily written. The paper linked above gave
   * a much clearer _definition_ of instrumental varaibles,
   * provided _intuition_ about them,
