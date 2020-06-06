@@ -47,3 +47,13 @@ A free text on the potential outcomes approach to causal inference
 13. A [paper](https://academic.oup.com/aje/article/164/11/1115/61454) on the Birthweight paradox, and a [summary](https://www.cdc.gov/mmwr/preview/mmwrhtml/00001782.htm) by the CDC
 
 14. An overview [post](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/) of conditioning on a collider (that one weird variable....). Isn't particularly deep, but contains references at varying degrees of difficulty.
+
+## Experimentation references
+
+1. Medium article: should we balance RCT's with respect to covariates? https://medium.com/@darren_dahly/out-of-balance-9021fd636d88
+
+2. Medium article: Selection bias in online experiments  https://medium.com/airbnb-engineering/selection-bias-in-online-experimentation-c3d67795cceb
+
+3. Okcupid article: The pitfalls of A/B testing in social networks: https://tech.okcupid.com/the-pitfalls-of-a-b-testing-in-social-networks/
+
+
